@@ -8,6 +8,7 @@
   ],
   "plugins": ["@typescript-eslint", "simple-import-sort", "unused-imports"],
   "rules": {
+    "@typescript-eslint/no-var-requires": "off",
     "@next/next/no-img-element": "error",
     "@next/next/no-html-link-for-pages": "error",
     "no-unused-vars": "off",

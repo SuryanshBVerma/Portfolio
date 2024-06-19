@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "checkJs": true,
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -31,5 +32,6 @@
     ".next/types/**/*.ts",
     "src/containers/About.tsx"
   ],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+
 }
