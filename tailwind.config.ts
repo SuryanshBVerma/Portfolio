@@ -1,15 +1,14 @@
-import type { Config } from 'tailwindcss'
-
-const defaultTheme = require("tailwindcss/defaultTheme");
+// const defaultTheme = require("tailwindcss/defaultTheme");
  
 const svgToDataUri = require("mini-svg-data-uri");
  
-const colors = require("tailwindcss/colors");
+// const colors = require("tailwindcss/colors");
 const {
   default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
 
-export default {
+/** @type {import('tailwindcss').Config} */
+const config: TailwindConfig  = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'class',
   theme: {
@@ -69,4 +68,7 @@ export default {
       );
     },
   ],
-} satisfies Config
+};
+
+
+export default config;
