@@ -1,4 +1,5 @@
 // const defaultTheme = require("tailwindcss/defaultTheme");
+import { Config } from 'tailwindcss';
  
 const svgToDataUri = require("mini-svg-data-uri");
  
@@ -8,7 +9,7 @@ const {
 } = require("tailwindcss/lib/util/flattenColorPalette");
 
 /** @type {import('tailwindcss').Config} */
-const config: TailwindConfig  = {
+const config: Config  = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'class',
   theme: {
