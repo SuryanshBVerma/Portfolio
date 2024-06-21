@@ -1,14 +1,8 @@
 'use client';
 import { projectsSection } from '@/lib/content/projects';
-import { PROJECTS_INITIALLY } from '@/lib/utils/config';
-import { sortByYear } from '@/lib/utils/helper';
-
-import { Button, ProjectCard, Wrapper } from '@/components';
-
-import { getSectionAnimation, projectVariants } from '@/styles/animations';
-
+import { Button, Wrapper } from '@/components';
+import { getSectionAnimation } from '@/styles/animations';
 import { motion } from 'framer-motion';
-import { useState } from 'react';
 import { HoverEffect } from '@/components/ui/card-hover-effect';
 
 
