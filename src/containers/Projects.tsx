@@ -1,9 +1,9 @@
 'use client';
-import { projectsSection } from '@/lib/content/projects';
 import { Button, Wrapper } from '@/components';
+import { HoverEffect } from '@/components/ui/card-hover-effect';
 import { getSectionAnimation } from '@/styles/animations';
 import { motion } from 'framer-motion';
-import { HoverEffect } from '@/components/ui/card-hover-effect';
+import { projectsSection } from '@/lib/content/projects';
 
 
 
@@ -19,7 +19,7 @@ const Projects = () => {
       <motion.h2 className="heading-secondary text-center !mb-12">
         {title}
       </motion.h2>
-      <div className="">
+      <div className="" id="projects">
 
         <HoverEffect
           {...projects}
