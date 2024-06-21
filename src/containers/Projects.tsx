@@ -9,57 +9,37 @@ import { getSectionAnimation, projectVariants } from '@/styles/animations';
 
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import { HoverEffect } from '@/components/ui/card-hover-effect';
+
+
 
 const Projects = () => {
   const { projects, title } = projectsSection;
-  const [showMore, setShowMore] = useState(false);
-  const topProjects = projects.slice(0, PROJECTS_INITIALLY);
+  // const [showMore, setShowMore] = useState(false);
+  // const topProjects = projects.slice(0, PROJECTS_INITIALLY);
 
-  const visibleProjects = showMore ? projects : topProjects;
+  // const visibleProjects = showMore ? projects : topProjects;
 
   return (
     <Wrapper animate={false} {...getSectionAnimation}>
       <motion.h2 className="heading-secondary text-center !mb-12">
         {title}
       </motion.h2>
-      <div className="grid gap-6 grid-cols-auto-250 xs:grid-cols-auto-300 place-items-center">
-        {sortByYear(visibleProjects).map((project, i) => {
-          if (i < PROJECTS_INITIALLY) {
-            return (
-              <ProjectCard
-                {...project}
-                key={project.id}
-                variants={projectVariants}
-                initial="hidden"
-                whileInView="show"
-                custom={i}
-                viewport={{ once: true }}
-              />
-            );
-          }
+      <div className="">
 
-          return (
-            <ProjectCard
-              {...project}
-              key={project.id}
-              variants={projectVariants}
-              initial="hidden"
-              animate="show"
-              custom={i - PROJECTS_INITIALLY}
-            />
-          );
-        })}
-      </div>
-      {projects.length > PROJECTS_INITIALLY && (
+        <HoverEffect
+          {...projects}
+          items={projects} />
+
         <Button
           size="lg"
           className="!mt-20"
           center
-          onClick={() => setShowMore((prev) => !prev)}
         >
-          {showMore ? 'show less' : 'show more'}
+          Show More
         </Button>
-      )}
+      </div>
+
     </Wrapper>
   );
 };

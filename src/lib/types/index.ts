@@ -26,12 +26,13 @@ export type ExperienceType = {
 
 export type ProjectType = {
   id: string;
-  name: string;
-  url: string;
+  title: string;
+  link: string;
   year: number;
   img: string;
   tags: string[];
   repo: string;
+  description : string;
 };
 
 export interface FeaturedProjectType
