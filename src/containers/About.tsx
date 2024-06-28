@@ -36,11 +36,6 @@ const About = () => {
             wants to explore every tech stack.
           </p>
 
-          <p>
-            My main focus these days is learning web development and finding
-            a decent job.
-          </p>
-
           {list && (
             <>
               <p>{list.title}</p>

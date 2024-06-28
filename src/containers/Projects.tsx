@@ -4,6 +4,7 @@ import { HoverEffect } from '@/components/ui/card-hover-effect';
 import { getSectionAnimation } from '@/styles/animations';
 import { motion } from 'framer-motion';
 import { projectsSection } from '@/lib/content/projects';
+import Link from 'next/link';
 
 
 
@@ -25,13 +26,15 @@ const Projects = () => {
           {...projects}
           items={projects} />
 
-        <Button
-          size="lg"
-          className="!mt-20"
-          center
-        >
-          Show More
-        </Button>
+        <Link href="https://github.com/SuryanshBVerma?tab=repositories">
+          <Button
+            size="lg"
+            className="!mt-20"
+            center
+          >
+            Show More
+          </Button>
+        </Link>
       </div>
 
     </Wrapper>

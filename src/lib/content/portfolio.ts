@@ -11,7 +11,7 @@ export const socialLinks: StringKeyValueType = {
   instagram: '',
   twitter: '',
   github: 'https://github.com/SuryanshBVerma',
-  linkedin: 'www.linkedin.com/in/suryansh-bachchan',
+  linkedin: 'https://www.linkedin.com/in/suryansh-bachchan',
 };
 
 export const author = {
