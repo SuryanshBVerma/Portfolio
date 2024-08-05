@@ -90,7 +90,7 @@ export const Card = ({
       </div>
       {isClient && (
         <div className="bottom-0 mt-2 ml-4 flex flex-col space-y-2">
-          <div className="flex flex-wrap gap-2 space-x-2">
+          <div className="flex flex-wrap space-x-2 my-2">
             {tags.map((tag, idx) => (
               <span
                 key={idx}
@@ -100,6 +100,7 @@ export const Card = ({
               </span>
             ))}
           </div>
+          
           <div className="flex space-x-2">
             <a
               href={repo}
