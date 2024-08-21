@@ -7,8 +7,6 @@
 
 <br>
 
-[![My Portfolio](https://user-images.githubusercontent.com/68834718/214532356-7c56cdbd-0136-4d24-a532-d27e160ae72d.png)](https://suryanshbverma.vercel.app/)
-
 ## Table of Contents
 
 - [Sections](#sections)
