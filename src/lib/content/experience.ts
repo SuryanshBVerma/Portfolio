@@ -4,8 +4,21 @@ export const experienceSection: ExperienceSectionType = {
   title: "Experience",
   experiences: [
     {
+      company: 'Trivium eSolutions',
+      companyUrl: 'https://trivium-esolutions.com/en',
+      role: 'Software Engineering Intern',
+      started: 'Jan 2025',
+      upto: 'Present',
+      tasks: [
+        'Built microservices with Spring Boot and Spring Cloud (Eureka) for scalable systems.',
+        'Created RESTful APIs with Spring Data JPA (Hibernate) and WebFlux for asynchronous, non-blocking database operations with MySQL.',
+        'Implemented authentication and authorization flows using Spring Security, JWT, OAuth 2.0, and custom',
+        'Utilised Apache Kafka for real-time event-driven architectures.',
+      ],
+    },
+    {
       company: 'Business & Finance Society',
-      companyUrl: 'https://www.pixelwand.live/',
+      companyUrl: 'https://www.linkedin.com/company/business-finance-society-cotton-university/',
       role: 'Technical Head',
       started: 'Oct 2021',
       upto: 'Jun 2023',
@@ -16,7 +29,7 @@ export const experienceSection: ExperienceSectionType = {
     },
     {
       company: ' Placement Cell ',
-      companyUrl: 'https://www.linkedin.com/company/business-finance-society-cotton-university/',
+      companyUrl: '',
       role: 'Student Volunteer',
       started: 'april 2023',
       upto: 'july 2023',

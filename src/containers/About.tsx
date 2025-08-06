@@ -24,13 +24,13 @@ const About = () => {
       <main className="flex flex-col items-center gap-16 lg:items-start lg:flex-row">
         <div className="space-y-4 lg:w-3/5">
           <p>
-            Hi, my name is Suryansh Bachchan Verma, a final-year MCA student at{' '}
+            Hi, my name is Suryansh Bachchan Verma, Software Engineering Intern @ {' '}
             <Link
-              href="https://christuniversity.in/"
+              href="https://trivium-esolutions.com/en"
               target="_blank"
               className="text-accent"
             >
-              Christ University 
+              Trivium India
             </Link>
             .<br /> I'm an Artist as well as crazy full stack web developer who
             wants to explore every tech stack.
