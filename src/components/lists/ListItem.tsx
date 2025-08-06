@@ -3,7 +3,7 @@ type Props = { children: React.ReactNode; className?: string };
 const ListItem = ({ children, className = '' }: Props) => {
   return (
     <li
-      className={`before:content-['▹'] flex before:mr-3 before:text-accent before:block ${className}`}
+      className={`before:content-['▹'] flex before:mr-3 before:text-accent before:block ${className} flex gap-3`}
     >
       {children}
     </li>
